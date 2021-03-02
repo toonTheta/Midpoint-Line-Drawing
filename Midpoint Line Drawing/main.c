@@ -72,7 +72,7 @@ int main(int argc, const char * argv[]) {
     cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
     
     printf("Lines Drawing took %f seconds to execute \n", cpu_time_used);
-    pOut = fopen("output_midpoint.txt", "w");
+    pOut = fopen("output.txt", "w");
     
     // Convert to Q1 coordinate otherwise the canvas will be vertical fliped
     for (int y = WINDOW_HEIGHT-1; y >= 0; y--) {
