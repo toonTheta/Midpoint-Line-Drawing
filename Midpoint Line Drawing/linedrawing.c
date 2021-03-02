@@ -80,7 +80,6 @@ void drawGreatGradientLine(LINE_T line, int canvas[WINDOW_WIDTH][WINDOW_HEIGHT],
     int d =  -2 * dx + dy;
     int dR = 2 * (dy - dx);
     int dU = -2 * dx;
-//    printf("Enter here\n");
     
     for (int y = line.y1; y <= line.y2; y++) {
         canvas[currentX][y] = 1;
@@ -158,12 +157,4 @@ void drawVerticalLine(LINE_T line, int canvas[WINDOW_WIDTH][WINDOW_HEIGHT]) {
     }
     
 }
-    /* Test Case */
-//    1 10 5 2
-//    15 20 50 60
-//    20 40 80 40
-//    30 30 70 70
-//    30 25 70 50
-//    15 40 40 80
-//    10 40 10 80
 
